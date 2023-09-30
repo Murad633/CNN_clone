@@ -291,6 +291,17 @@ input {
     .footer__nav {
         grid-template-columns: repeat(7, 1fr) ;
     }
+    .header__subnav-mount {
+        padding: 0 240px;
+    }
+    .footer__inner {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+    .headline_section-banner__wrapper, .container__field {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
 }
 @media (max-width: 1040px) {
     .header__left .nav-items {
