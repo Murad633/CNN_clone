@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Navigation */
+.header__subnav-mount {
+    border-bottom: 1px solid #404040;
+    background: #0C0C0C;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+.nav-items li a {
+    font-weight: 500;
+}
+.header__subnav-mount a {
+    text-decoration: none;
+}
+.header__subnav-mount a:hover {
+    color: #fff;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    align-items: flex-start;
+}
+
+.header__subnav-mount .header__left {
+    display: flex;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.header__subnav-mount .header__left a #hamburger {
+    margin-right: 24px;
+}
+.header__subnav-mount .header__left .brand-logo {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.brand-logo a:nth-child(2) {
+    margin:0 12px 0 16px ;
+    color: #FFF;
+    font-size: 17.297px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.brand-logo a:nth-child(2):hover {
+    color: #E6E6E6;
+}
+.header__left .nav-items li {
+    margin: 0 12px;
+}
+
+
+.header__subnav-mount .header__right {
+    display: flex;
+}
+.header__subnav-mount .header__right .nav-items{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.header__right .nav-items a:nth-child(1), .header__right .nav-items a:nth-child(2) {
+    margin-right: 24px;
+}
+.header__right .nav-items a:nth-child(3) {
+    margin-right: 16px;
+}
+.header__right .nav-items button {
+    border-radius: 8px;
+    background-color: #0C0C0C;
+    border: 1px solid #FFF;
+    color: #fff;
+    padding: 9px 6px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 32px;
+    cursor: pointer;
+}
+.header__right .nav-items button:hover {
+    background-color: #313131;
+}
+.header__container ul li {
+    display: inline;
+}
+.header__container ul li a, a {
+    color: #E6E6E6;
+}
+ul li {
+    list-style: none;
+}
+
+/* Header */
+.headline_section-banner__wrapper {
+    padding: 48px 32px 38px 32px;
+}
+.headline_section-banner__wrapper h1 {
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+}
+
+/* Container field */
+.container__field {
+    margin: 44px 0 100px 0;
+    padding: 0 32px;
+    display: grid;
+    gap: 24px;
+}
+.container__field .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__field .card p {
+    color: #0C0C0C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0C0C0C;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.footer__inner {
+    padding: 0 32px;
+}
+
+.footer__nav {
+    display: grid;
+    row-gap: 24px;
+}
+.footer__nav .nav-list ul li:first-child {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    margin-bottom: 11px;
+}
+.footer__nav .nav-list ul li a {
+    color: #E6E6E6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    text-decoration: none;
+}
+.footer__nav .nav-list ul li a:hover {
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    background-image: url(../assets/filled.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    background-color: #fff;
+    box-shadow: none;
+    color: #757575;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #B1B1B1;
+    /* -webkit-appearance: none; */
+}
+/* Extra small devices (phones, 600px and down) */
+/* burda 2 dene card olacaq */
+@media (max-width: 835px) {
+    .container__field {
+        grid-template-columns: 1fr;
+    }
+    .footer__nav {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .footer__nav .nav-list:nth-child(1) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(5) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(12) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(6) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(7) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(13) {
+        display: none;
+    } 
+    .footer__nav .nav-list:nth-child(8) {
+        display: none;
+    }
+    .header__right .nav-items a:first-child {
+        display: none;
+    }
+    .header__right .nav-items a:nth-child(2) {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* burda 3 dene card olacaq */
+@media (min-width: 835px) and (max-width: 1340px){
+    .container__field {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__nav {
+        grid-template-columns: repeat(3, 1fr) ;
+    }
+    .footer__nav .nav-list:nth-child(1) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(5) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(12) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(6) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(7) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(13) {
+        display: none;
+    } 
+    .footer__nav .nav-list:nth-child(8) {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* burda 4 dene card olacaq */
+@media (min-width: 1340px) and (max-width: 1920px) {
+    .header__subnav-mount {
+        padding: 0 240px;
+    }
+    .footer__inner {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+    .headline_section-banner__wrapper, .container__field {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+    .container__field {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer__nav {
+        grid-template-columns: repeat(5, 1fr) ;
+    }
+    .footer__nav .nav-list:nth-child(6) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(7) {
+        display: none;
+    }
+    .footer__nav .nav-list:nth-child(13) {
+        display: none;
+    }
+}
+@media (min-width: 1920px) {
+    .container__field {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footer__nav {
+        grid-template-columns: repeat(7, 1fr) ;
+    }
+}
+@media (max-width: 1040px) {
+    .header__left .nav-items {
+        display: none;
+    }
+
+}
